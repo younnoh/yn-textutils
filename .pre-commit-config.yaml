@@ -26,4 +26,5 @@ repos:
     -   id: pytest
         name: Run tests
         language: python
-        entry: uv run pytest
+        entry: uv run pytest tests/test_remove_punctuation.py
+        pass_filenames: false

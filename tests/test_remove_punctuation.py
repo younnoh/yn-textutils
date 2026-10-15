@@ -2,6 +2,7 @@ import pytest
 
 from yn_textutils import remove_punctuation
 
+
 @pytest.mark.parametrize(
     ["text", "expected"],
     [
@@ -12,6 +13,7 @@ from yn_textutils import remove_punctuation
 )
 def test_removes_internal_punctuation(text, expected):
     assert remove_punctuation(text) == expected
+
 
 @pytest.mark.parametrize(
     ["text", "expected"],
